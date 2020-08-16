@@ -1,0 +1,81 @@
+
+
+<br>
+<br>
+
+<h1>!!!!!!!!!!!!!!!EVENT BINDING!!!!!!!!</h1>
+
+<br>
+<br>
+
+<button (click)="cart()">Add to Cart</button>
+
+<h3>{{message}}</h3>
+
+<br>
+<br>
+
+<input type="text" (click)="myfun($event)">
+
+
+<h1>{{msg}}</h1>
+
+
+<br>
+<br>
+
+<button value="laptop" (click)="item($event)">laptop</button>
+<button value="tv" (click)="item($event)">Tv</button>
+<button value="washing machine" (click)="item($event)">Washing machine</button>
+
+
+<h3>{{cartitems}}</h3>
+
+
+
+<br>
+<br>
+<h1>*****template reference variable*********</h1>
+
+<input type="text" name="local variable" value="search" #temprefvar>
+
+<br>
+<br>
+
+<h1>{{refvar}}</h1>
+
+<br>
+<br>
+<button (click)="ref(temprefvar)">Get values</button>
+
+
+<br>
+<br>
+<h1>******Two way data binding*******</h1>
+
+
+<input type="text" name="" value="search" [(ngModel)]="inputcontent">
+
+<h1>{{inputcontent}}</h1>
+
+
+<br>    
+<br>
+
+<h1>**********structural directives tutorials**********</h1>
+
+<div class="container">
+
+    <button class="btn-success"  (click)="dir()">click</button>
+    <h1 *ngIf="isvalid; then thenblock; else elseblock"></h1>
+
+    <ng-template #thenblock>
+            <h1>here this is razik sr full-stack developer</h1>
+        </ng-template>
+
+    <ng-template #elseblock>
+        <h1>not a valid statement</h1>
+    </ng-template>
+</div>
+
+

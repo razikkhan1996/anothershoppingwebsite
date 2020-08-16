@@ -1,0 +1,18 @@
+<table class="table">
+    <thead>
+        <th>S.No</th>
+        <th>Name</th>
+        <th>Department</th>
+        <th>Salary</th>
+        <th>employee image</th>
+    </thead>
+    <tr *ngFor="let mydetails of details">
+        <td>{{mydetails.id}}</td>
+        <td>{{mydetails.name}}</td>
+        <td>{{mydetails.dept}}</td>
+        <td>{{mydetails.sal}}</td>
+        <td><img src={{mydetails.img}} alt="error" width="70px"></td>
+
+
+    </tr>
+</table>
